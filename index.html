@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/blog/css/styles.css">
-    <title>Welcome to My Website</title>
-    <base href="/blog">
-</head>
-<body>
-    <nav>
-        <a href="/blog/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-        <a href="/blog/cv" class="{% if page.url == '/cv/' %}active{% endif %}">CV</a>
-        <a href="/blog/contacts" class="{% if page.url == '/contacts/' %}active{% endif %}">Contact</a>
-        <a href="/blog/projects" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
-        <a href="/blog/posts" class="{% if page.url == '/posts/' %}active{% endif %}">Blog</a>
-    </nav>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <main>
-        <p>This is the homepage (update).</p>
-    </main>
-</body>
-</html>
+---
+title: "My Website"
+layout: layout.html
+---
+
+<p>This is the homepage.</p>
