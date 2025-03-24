@@ -22,7 +22,11 @@ jobs:
         run: npm install
 
       - name: Build the site
-        run: npm run build
+        run: |
+          rm -rf _site
+          npx eleventy
+          ls -R _site
+          cat _site/index.html  # 🛠 DEBUG: Print the generated index.html to check layout
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
