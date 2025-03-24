@@ -5,4 +5,4 @@ layout: layout.html
 tags: [projects]
 ---
 
-Description of my project
+Description of my first project
