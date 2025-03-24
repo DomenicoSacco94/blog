@@ -6,7 +6,7 @@ layout: layout.html
 <ul>
     {% for project in collections.projects | reverse %}
     <li>
-        <a href="{{ project.url }}">{{ project.data.title }}</a>
+        <a href="blog{{ project.url }}">{{ project.data.title }}</a>
     </li>
     {% endfor %}
 </ul>
