@@ -1,6 +1,6 @@
 ---
 title: "Curriculum Vitae"
-layout: layout.njk
+layout: layout.html
 ---
 
 This is my CV.

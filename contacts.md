@@ -1,6 +1,6 @@
 ---
 title: "Contacts"
-layout: layout.njk
+layout: layout.html
 ---
 
 These are my contacts
