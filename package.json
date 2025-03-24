@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "My Blog",
   "scripts": {
-    "build": "eleventy",
-    "deploy": "npm run build && gh-pages -d _site"
+    "build": "eleventy"
   },
   "author": "",
   "license": "ISC",
