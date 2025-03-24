@@ -1,8 +1,6 @@
 ---
-title: Home
+title: Welcome to My Website
 layout: layout.html
 ---
-
-# Welcome to My Website
 
 This is the homepage. 
