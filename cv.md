@@ -1,6 +1,6 @@
 ---
 title: "Curriculum Vitae"
-layout: layout.html
+layout: _includes/layout.html
 ---
 
 This is my CV
