@@ -3,4 +3,6 @@ title: "Contacts"
 layout: layout.html
 ---
 
-These are my contacts
+## Contacts
+
+- [LinkedIn](https://www.linkedin.com/in/domenico-sacco-51b9b5160)
