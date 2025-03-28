@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: grid;
@@ -9,6 +9,9 @@ body {
         "nav header"
         "nav main";
     height: 100vh;
+    background-color: #121212;
+    color: #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav {
@@ -16,6 +19,7 @@ nav {
     color: white;
     padding: 10px;
     grid-area: nav;
+    transition: background-color 0.3s;
 }
 
 nav a {
@@ -23,19 +27,46 @@ nav a {
     text-decoration: none;
     display: block;
     padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a.active {
-    background-color: white;
+    background-color: black;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #555;
     color: black;
+}
+
+nav a:visited {
+    color: white;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1e90ff;
 }
 
 header {
     grid-area: header;
     padding-left: 20px;
+    transition: padding-left 0.3s;
 }
 
 main {
     grid-area: main;
     padding-left: 20px;
+    transition: padding-left 0.3s;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
