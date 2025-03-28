@@ -1,0 +1,12 @@
+---
+title: "Custom Web Crawler"
+description: "This repo contains a custom web crawler to scan PDFs searching for all the recurrences of a Regexp."
+date: 2024-03-10
+layout: layout.html
+tags: [projects]
+---
+
+[Repository Link](https://github.com/DomenicoSacco94/custom-web-crawler)
+
+## Description
+This repo contains a custom web crawler to scan PDFs searching for all the recurrences of a Regexp.
