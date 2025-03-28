@@ -4,9 +4,5 @@ description: "This repo contains a custom web crawler to scan PDFs searching for
 date: 2024-03-10
 layout: layout.html
 tags: [projects]
+link: "https://github.com/DomenicoSacco94/custom-web-crawler"
 ---
-
-[Repository Link](https://github.com/DomenicoSacco94/custom-web-crawler)
-
-## Description
-This repo contains a custom web crawler to scan PDFs searching for all the recurrences of a Regexp.
