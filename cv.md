@@ -45,8 +45,8 @@ Polytechnic Institute of Bari, Italy
 Final evaluation: 110 e lode/110 (Italy), 1.0 (Germany), 4.0 GPA (USA)
 
 # Courses and certifications
-Course for Certified Associate Project Management, June 2024  
-Oracle Certified Associate, May 2018
+- Course for Certified Associate Project Management, June 2024  
+- Oracle Certified Associate, May 2018
 
 # Spoken languages
 - Italian (Native)
