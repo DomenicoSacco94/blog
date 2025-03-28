@@ -70,3 +70,26 @@ main {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main";
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    header, main {
+        padding-left: 10px;
+    }
+}
