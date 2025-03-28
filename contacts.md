@@ -5,4 +5,4 @@ layout: layout.html
 
 ## Contacts
 
-- [LinkedIn](https://www.linkedin.com/in/domenico-sacco-51b9b5160)
+- My [LinkedIn](https://www.linkedin.com/in/domenico-sacco-51b9b5160) page
