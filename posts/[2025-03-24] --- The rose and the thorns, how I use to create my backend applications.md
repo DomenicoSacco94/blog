@@ -5,9 +5,9 @@ layout: layout.html
 tags: [posts]
 ---
 
-[WIP]
+[Work In Progress]
 
-### Backend applications with Spring: a recurring solution to a recurring problem
+## Backend applications with Spring: a recurring solution to a recurring problem
 
 Developing a REST API Backend application is one of the most frequent task a developer needs to do.
 From San Francisco to Melbourne, every day some developer, somewhere, needs to set up a backend application serving some REST endpoints.
@@ -15,7 +15,7 @@ From San Francisco to Melbourne, every day some developer, somewhere, needs to s
 One of the most popular tools to get this job done is building a Spring Boot application and shipping the docker container to some deployment service.
 
 During the last years I was exposed to different way to create a Spring Boot application and I decided to try to gather most of the tools I used
-and the best practices in a blog post.
+and the best practices in a blog post. I would like this to be primarily a retrospective of what I learned on the subject, but I would be happy if it also ends up helping somebody else.
 
 When I need to create a Backend application, I tend to think about it as a two-sided problem to solve.
 
@@ -31,7 +31,7 @@ I need to say in advance, that this is a rather subjective view that I matured t
 later to the problem of setting them up from scratch, increasing the scope of the problem from the simple coding to the actual configuration and deployment of the application.
 From this experience I came to the conclusion that while there is a lot of literature on the "rose" part, the "thorns" are often overlooked, and they might actually be the most difficult aspect of the actual application.
 
-### The thorns
+## The thorns
 
 One of the reasons I find difficult to initially set up a functioning Spring Boot application is the lack of constraints in the beginning.
 This is clearly not an issue of Spring, but actually a reason for its extensive success: being agnostic to the way the app is going to be deployed.
