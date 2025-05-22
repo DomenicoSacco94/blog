@@ -6,7 +6,7 @@ layout: layout.html
 <ul>
     {% for post in collections.posts | reverse %}
     <li>
-        <a href="blog{{ post.url }}">{{ post.data.title }}</a>
+        <a href="blog{{ post.url }}"> [{{ post.data.date }}] --- {{ post.data.title }}</a>
     </li>
     {% endfor %}
 </ul>
