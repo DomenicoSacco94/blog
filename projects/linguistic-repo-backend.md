@@ -1,6 +1,6 @@
 ---
 title: "Linguistic Repo Backend"
-description: "Backend microservice for the Linguistic Repo app"
+description: "Backend microservice for the Linguistic Repo app."
 date: 2024-03-10
 layout: layout.html
 tags: [projects]
