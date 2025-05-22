@@ -1,6 +1,7 @@
 ---
 title: "German Practice"
-description: "A very simple project written in React/Typescript (using Vite), it loads configurable JSONs containing some german exercises and their solutions."
+description: "A very simple project done over lunchtime, it loads configurable JSONs containing some german exercises and their solutions."
+technologies: "React/Typescript, Vite"
 date: 2024-03-10
 layout: layout.html
 tags: [projects]
