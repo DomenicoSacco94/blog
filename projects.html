@@ -8,6 +8,7 @@ layout: layout.html
     <li>
         <a href="{{ project.data.link }}" style="font-size: larger;">{{ project.data.title }}</a>
         <p>{{ project.data.description }}</p>
+        <p style="font-size: small;"> <strong> Tech: </strong> [{{ project.data.technologies }}]</p>
     </li>
     {% endfor %}
 </ul>
