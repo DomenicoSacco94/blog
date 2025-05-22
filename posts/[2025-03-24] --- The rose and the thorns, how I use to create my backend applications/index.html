@@ -20,13 +20,13 @@
         <h1>The rose and the thorns, how I use to create my backend applications</h1>
     </header>
     <main>
-        <p>[WIP]</p>
-<h3>Backend applications with Spring: a recurring solution to a recurring problem</h3>
+        <p>[Work In Progress]</p>
+<h2>Backend applications with Spring: a recurring solution to a recurring problem</h2>
 <p>Developing a REST API Backend application is one of the most frequent task a developer needs to do.
 From San Francisco to Melbourne, every day some developer, somewhere, needs to set up a backend application serving some REST endpoints.</p>
 <p>One of the most popular tools to get this job done is building a Spring Boot application and shipping the docker container to some deployment service.</p>
 <p>During the last years I was exposed to different way to create a Spring Boot application and I decided to try to gather most of the tools I used
-and the best practices in a blog post.</p>
+and the best practices in a blog post. I would like this to be primarily a retrospective of what I learned on the subject, but I would be happy if it also ends up helping somebody else.</p>
 <p>When I need to create a Backend application, I tend to think about it as a two-sided problem to solve.</p>
 <ol>
 <li>Implementing the requested business logic (and this is trivial)</li>
@@ -40,7 +40,7 @@ and the best practices in a blog post.</p>
 <p>I need to say in advance, that this is a rather subjective view that I matured through the years, being exposed early in my career to Spring Applications that were already &quot;ready to work on&quot; and only
 later to the problem of setting them up from scratch, increasing the scope of the problem from the simple coding to the actual configuration and deployment of the application.
 From this experience I came to the conclusion that while there is a lot of literature on the &quot;rose&quot; part, the &quot;thorns&quot; are often overlooked, and they might actually be the most difficult aspect of the actual application.</p>
-<h3>The thorns</h3>
+<h2>The thorns</h2>
 <p>One of the reasons I find difficult to initially set up a functioning Spring Boot application is the lack of constraints in the beginning.
 This is clearly not an issue of Spring, but actually a reason for its extensive success: being agnostic to the way the app is going to be deployed.
 While the older Spring MVC produced only WARs and precluded some deployment techniques, Spring comes with an embedded Tomcat server and builds a handy .jar file, which opens the developer to many other options for deployment.</p>
