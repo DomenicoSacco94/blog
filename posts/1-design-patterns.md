@@ -18,7 +18,6 @@ Ain't looking pretty, but it is automated ;-)
 
 ---
 
-# Table of Contents
 - ## [Creational Patterns](#creational-patterns)
     - [Abstract Factory](#abstract-factory)
     - [Singleton](#singleton)
