@@ -16,6 +16,8 @@ I also found [this blog post](https://8thlight.com/insights/a-color-coded-guide-
 The diagrams were drawn by using an automated gradle task that scans every single class in `patterns` and generates the corresponding UML diagram.
 Ain't looking pretty, but it is automated ;-)
 
+---
+
 # Table of Contents
 - ## [Creational Patterns](#creational-patterns)
     - [Abstract Factory](#abstract-factory)
@@ -46,7 +48,9 @@ Ain't looking pretty, but it is automated ;-)
 - ## [BONUS: Exagonal architecture](#exagonal-architecture)
     - [Command](#command)
 
-# Creational Patterns {#creational-patterns}
+---
+
+# Creational Patterns
 The Creational Patterns are used to control how an object is instantiated.
 
 ## Abstract Factory
@@ -88,6 +92,7 @@ so as a shortcut we just clone form an existing object and apply some small twea
 
 <img src="/blog/pictures/design-patterns/Prototype.png" alt="Prototype">
 
+---
 
 # Structural Patterns
 The Structural Patterns are used to control how the classes are related to each other.
@@ -153,6 +158,7 @@ It keeps a reference of it, which can be altered by each decorator.
 
 <img src="/blog/pictures/design-patterns/Decorator.png" alt="Decorator">
 
+---
 
 # Behavioral Patterns
 The Behavioral Patterns are used to control what the classes exactly do and how they communicate with each other.
@@ -246,9 +252,10 @@ It consists in adding a Visitor class and a corresponding method to invoke it th
 
 <img src="/blog/pictures/design-patterns/Visitor.png" alt="Visitor">
 
+---
 
-## Exagonal Architecture
-The Exagonal architecture can be seen as an evolution of the layered model (controller -> service -> repository).
+## Hexagonal Architecture
+The Hexagonal architecture can be seen as an evolution of the layered model (controller -> service -> repository).
 
 It inverts the dependency of the service layer (business) with the repository.
 In order to achieve this outcome, the architecture will use ports (inbound and outbound) and adapters.

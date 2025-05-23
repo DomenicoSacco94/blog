@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/blog/assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="/blog/css/styles.css">
-    <title>Linguistic Repo (Backend)</title>
-    <base href="/blog">
-</head>
-<body>
-    <nav>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="icon" href="/blog/assets/favicon.png" type="image/x-icon">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+            <link rel="stylesheet" href="/blog/css/styles.css">
+            <title>Linguistic Repo (Backend)</title>
+            <base href="/blog">
+        </head>
+        <body>
+            <nav>
     <a href="/blog/" class="">Home</a>
     <a href="/blog/cv" class="">CV</a>
     <a href="/blog/projects" class="">Projects</a>
     <a href="/blog/posts" class="">Blog</a>
 </nav>
-    <header>
-        <h1>Linguistic Repo (Backend)</h1>
-    </header>
-    <main>
-        
-    </main>
-</body>
-</html>
+            <header>
+                <h1>Linguistic Repo (Backend)</h1>
+            </header>
+            <main>
+                
+            </main>
+        </body>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    // Exclude links starting with a number and a hyphen
+                    if (!/^\d+-/.test(anchor.getAttribute("href").substring(1))) {
+                        anchor.addEventListener("click", function(e) {
+                            e.preventDefault();
+                            const targetId = this.getAttribute("href").substring(1); // Remove the '#' from the href
+                            const target = document.getElementById(targetId);
+                            if (target) {
+                                const headerOffset = 70; // Adjust this value based on your fixed header height
+                                const elementPosition = target.getBoundingClientRect().top;
+                                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                                window.scrollTo({
+                                    top: offsetPosition,
+                                    behavior: "smooth"
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+        </html>

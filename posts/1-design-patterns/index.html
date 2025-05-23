@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/blog/assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="/blog/css/styles.css">
-    <title>Design patterns with Java examples</title>
-    <base href="/blog">
-</head>
-<body>
-    <nav>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="icon" href="/blog/assets/favicon.png" type="image/x-icon">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+            <link rel="stylesheet" href="/blog/css/styles.css">
+            <title>Design patterns with Java examples</title>
+            <base href="/blog">
+        </head>
+        <body>
+            <nav>
     <a href="/blog/" class="">Home</a>
     <a href="/blog/cv" class="">CV</a>
     <a href="/blog/projects" class="">Projects</a>
     <a href="/blog/posts" class="">Blog</a>
 </nav>
-    <header>
-        <h1>Design patterns with Java examples</h1>
-    </header>
-    <main>
-        <p>in the last months I felt I needed a refresher on the Design Patterns.
+            <header>
+                <h1>Design patterns with Java examples</h1>
+            </header>
+            <main>
+                <p>in the last months I felt I needed a refresher on the Design Patterns.
 So I created <a href="https://github.com/DomenicoSacco94/design-patterns-with-java">this GitHub Repo</a>, which contains a refresher on the most popular design patterns, implemented with a simple set of Java classes</p>
 <p>I have been reading <a href="https://www.amazon.de/-/en/Java-Design-Pattern-Essentials-Second/dp/0956575846">this book</a> and used it as inspiration to come up with my own examples.
 My suggestion is to do the same: creating examples in a different domain than those provided by the book, to be sure to catch the gist of each pattern.</p>
 <p>I also found <a href="https://8thlight.com/insights/a-color-coded-guide-to-ports-and-adapters">this blog post</a> particularly useful to better describe and understand the clean exagonal architecture.</p>
 <p>The diagrams were drawn by using an automated gradle task that scans every single class in <code>patterns</code> and generates the corresponding UML diagram.
 Ain't looking pretty, but it is automated ;-)</p>
+<hr>
 <h1>Table of Contents</h1>
 <ul>
 <li>
@@ -74,7 +75,8 @@ Ain't looking pretty, but it is automated ;-)</p>
 </ul>
 </li>
 </ul>
-<h1>Creational Patterns {#creational-patterns}</h1>
+<hr>
+<h1>Creational Patterns</h1>
 <p>The Creational Patterns are used to control how an object is instantiated.</p>
 <h2>Abstract Factory</h2>
 <p>The abstract factory pattern is used when you want to create a family of related objects
@@ -96,6 +98,7 @@ It has a Director class specifying how to build the object and the builder itsel
 <p>The prototype is a design pattern used when creating an object is really expensive and time-consuming
 so as a shortcut we just clone form an existing object and apply some small tweaks.</p>
 <img src="/blog/pictures/design-patterns/Prototype.png" alt="Prototype">
+<hr>
 <h1>Structural Patterns</h1>
 <p>The Structural Patterns are used to control how the classes are related to each other.</p>
 <h2>Adapter</h2>
@@ -134,6 +137,7 @@ create too many inheritance relationships.
 The important thing to remember is that the decorator itself extends the class it wants to decorate and, at the same time,
 It keeps a reference of it, which can be altered by each decorator.</p>
 <img src="/blog/pictures/design-patterns/Decorator.png" alt="Decorator">
+<hr>
 <h1>Behavioral Patterns</h1>
 <p>The Behavioral Patterns are used to control what the classes exactly do and how they communicate with each other.</p>
 <h2>Command</h2>
@@ -182,8 +186,9 @@ and then make changes to it in the child classes.</p>
 <p>This pattern is used to introduce new functionality into a class hierarchy bringing only a few changes
 It consists in adding a Visitor class and a corresponding method to invoke it the visited class.</p>
 <img src="/blog/pictures/design-patterns/Visitor.png" alt="Visitor">
-<h2>Exagonal Architecture</h2>
-<p>The Exagonal architecture can be seen as an evolution of the layered model (controller -&gt; service -&gt; repository).</p>
+<hr>
+<h2>Hexagonal Architecture</h2>
+<p>The Hexagonal architecture can be seen as an evolution of the layered model (controller -&gt; service -&gt; repository).</p>
 <p>It inverts the dependency of the service layer (business) with the repository.
 In order to achieve this outcome, the architecture will use ports (inbound and outbound) and adapters.</p>
 <p>Inbound ports will be IMPLEMENTED by the application, outbound port are those the application DEPENDS on.</p>
@@ -191,6 +196,30 @@ In order to achieve this outcome, the architecture will use ports (inbound and o
 <p><strong>WHY IS THIS ARCHITECTURE LEANER?</strong> We disengaged the business layer from the concrete implementation of the inbound and outbound ports.
 In the future, we can choose to switch the ports and for instance making the outbound port a REST API instead of a DB.</p>
 
-    </main>
-</body>
-</html>
+            </main>
+        </body>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    // Exclude links starting with a number and a hyphen
+                    if (!/^\d+-/.test(anchor.getAttribute("href").substring(1))) {
+                        anchor.addEventListener("click", function(e) {
+                            e.preventDefault();
+                            const targetId = this.getAttribute("href").substring(1); // Remove the '#' from the href
+                            const target = document.getElementById(targetId);
+                            if (target) {
+                                const headerOffset = 70; // Adjust this value based on your fixed header height
+                                const elementPosition = target.getBoundingClientRect().top;
+                                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                                window.scrollTo({
+                                    top: offsetPosition,
+                                    behavior: "smooth"
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+        </html>

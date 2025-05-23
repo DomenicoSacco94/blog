@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/blog/assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="/blog/css/styles.css">
-    <title>Curriculum Vitae</title>
-    <base href="/blog">
-</head>
-<body>
-    <nav>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="icon" href="/blog/assets/favicon.png" type="image/x-icon">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+            <link rel="stylesheet" href="/blog/css/styles.css">
+            <title>Curriculum Vitae</title>
+            <base href="/blog">
+        </head>
+        <body>
+            <nav>
     <a href="/blog/" class="">Home</a>
     <a href="/blog/cv" class="active">CV</a>
     <a href="/blog/projects" class="">Projects</a>
     <a href="/blog/posts" class="">Blog</a>
 </nav>
-    <header>
-        <h1>Curriculum Vitae</h1>
-    </header>
-    <main>
-        <h2>Summary</h2>
+            <header>
+                <h1>Curriculum Vitae</h1>
+            </header>
+            <main>
+                <h2>Summary</h2>
 <p><strong>Senior Full Stack Software Developer</strong> with 6+ years of experience.<br>
 Experienced in working in cross-functional teams using the Agile methodology.<br>
 Proficient in <strong>Java/Spring</strong>, <strong>React/Typescript</strong>, and <strong>AWS/Terraform</strong> for DevOps.</p>
@@ -98,6 +98,30 @@ Final evaluation: <strong>110 e lode/110 (Italy)</strong>, <strong>1.0 (Germany)
 <li>Exploring foreign cultures and languages</li>
 </ul>
 
-    </main>
-</body>
-</html>
+            </main>
+        </body>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    // Exclude links starting with a number and a hyphen
+                    if (!/^\d+-/.test(anchor.getAttribute("href").substring(1))) {
+                        anchor.addEventListener("click", function(e) {
+                            e.preventDefault();
+                            const targetId = this.getAttribute("href").substring(1); // Remove the '#' from the href
+                            const target = document.getElementById(targetId);
+                            if (target) {
+                                const headerOffset = 70; // Adjust this value based on your fixed header height
+                                const elementPosition = target.getBoundingClientRect().top;
+                                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                                window.scrollTo({
+                                    top: offsetPosition,
+                                    behavior: "smooth"
+                                });
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+        </html>
