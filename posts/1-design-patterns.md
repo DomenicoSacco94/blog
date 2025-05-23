@@ -45,7 +45,6 @@ I also found [this blog post](https://8thlight.com/insights/a-color-coded-guide-
 - [Visitor](#visitor)
 
 ## BONUS: Exagonal architecture
-- [Command](#command)
 
 ---
 
