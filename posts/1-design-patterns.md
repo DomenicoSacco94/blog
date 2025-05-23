@@ -5,7 +5,7 @@ layout: layout.html
 tags: [posts]
 ---
 
-in the last months I felt I needed a refresher on the Design Patterns.
+In the last months I felt I needed a refresher on the Design Patterns.
 So I created [this GitHub Repo](https://github.com/DomenicoSacco94/design-patterns-with-java), which contains a refresher on the most popular design patterns, implemented with a simple set of Java classes
 
 I have been reading [this book](https://www.amazon.de/-/en/Java-Design-Pattern-Essentials-Second/dp/0956575846) and used it as inspiration to come up with my own examples.
