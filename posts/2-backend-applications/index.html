@@ -60,24 +60,33 @@ Something that helps is to think about the operational problems that, as a devel
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    // Exclude links starting with a number and a hyphen
-                    if (!/^\d+-/.test(anchor.getAttribute("href").substring(1))) {
-                        anchor.addEventListener("click", function(e) {
-                            e.preventDefault();
-                            const targetId = this.getAttribute("href").substring(1); // Remove the '#' from the href
-                            const target = document.getElementById(targetId);
-                            if (target) {
-                                const headerOffset = 70; // Adjust this value based on your fixed header height
-                                const elementPosition = target.getBoundingClientRect().top;
-                                const offsetPosition = elementPosition + window.scrollY - headerOffset;
+                    anchor.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        const targetText = this.getAttribute("href")
+                            .substring(1)
+                            .toLowerCase()
+                            .replace(/[\s:]+/g, "-"); // Replace spaces with hyphens
+                        console.log(`Looking for heading with text: ${targetText}`); // Debugging
 
-                                window.scrollTo({
-                                    top: offsetPosition,
-                                    behavior: "smooth"
-                                });
-                            }
-                        });
-                    }
+                        const target = Array.from(document.querySelectorAll("h1, h2, h3")).find(heading =>
+                            heading.textContent
+                                .toLowerCase()
+                                .replace(/[\s:]+/g, "-") === targetText // Normalize heading text similarly
+                        );
+
+                        if (target) {
+                            const headerOffset = 70;
+                            const elementPosition = target.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: "smooth"
+                            });
+                        } else {
+                            console.warn(`Target not found for text: ${targetText}`); // Debugging
+                        }
+                    });
                 });
             });
         </script>
