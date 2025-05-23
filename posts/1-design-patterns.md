@@ -11,41 +11,41 @@ So I created [this GitHub Repo](https://github.com/DomenicoSacco94/design-patter
 I have been reading [this book](https://www.amazon.de/-/en/Java-Design-Pattern-Essentials-Second/dp/0956575846) and used it as inspiration to come up with my own examples.
 My suggestion is to do the same: creating examples in a different domain than those provided by the book, to be sure to catch the gist of each pattern.
 
-I also found [this blog post](https://8thlight.com/insights/a-color-coded-guide-to-ports-and-adapters) particularly useful to better describe and understand the clean exagonal architecture.
-
-The diagrams were drawn by using an automated gradle task that scans every single class in `patterns` and generates the corresponding UML diagram.
-Ain't looking pretty, but it is automated ;-)
+I also found [this blog post](https://8thlight.com/insights/a-color-coded-guide-to-ports-and-adapters) particularly useful to better describe and understand the clean hexagonal architecture.
 
 ---
 
-- ## [Creational Patterns](#creational-patterns)
-    - [Abstract Factory](#abstract-factory)
-    - [Singleton](#singleton)
-    - [Factory](#factory)
-    - [Builder](#builder)
-    - [Prototype](#prototype)
-- ## [Structural Patterns](#structural-patterns)
-    - [Adapter](#adapter)
-    - [Facade](#facade)
-    - [Proxy](#proxy)
-    - [Composite](#composite)
-    - [Bridge](#bridge)
-    - [Flyweight](#flyweight)
-    - [Decorator](#decorator)
-- ## [Behavioral Patterns](#behavioral-patterns)
-    - [Command](#command)
-    - [Chain of Responsibility](#chain-of-responsibility)
-    - [Interpreter](#interpreter)
-    - [Iteration](#iteration)
-    - [Mediator](#mediator)
-    - [Memento](#memento)
-    - [State](#state)
-    - [Observer](#observer)
-    - [Strategy](#strategy)
-    - [Template Method](#template-method)
-    - [Visitor](#visitor)
-- ## [BONUS: Exagonal architecture](#exagonal-architecture)
-    - [Command](#command)
+## Creational Patterns
+- [Abstract Factory](#abstract-factory)
+- [Singleton](#singleton)
+- [Factory](#factory)
+- [Builder](#builder)
+- [Prototype](#prototype)
+
+## Structural Patterns
+- [Adapter](#adapter)
+- [Facade](#facade)
+- [Proxy](#proxy)
+- [Composite](#composite)
+- [Bridge](#bridge)
+- [Flyweight](#flyweight)
+- [Decorator](#decorator)
+
+## Behavioral Patterns
+- [Command](#command)
+- [Chain of Responsibility](#chain-of-responsibility)
+- [Interpreter](#interpreter)
+- [Iteration](#iteration)
+- [Mediator](#mediator)
+- [Memento](#memento)
+- [State](#state)
+- [Observer](#observer)
+- [Strategy](#strategy)
+- [Template Method](#template-method)
+- [Visitor](#visitor)
+
+## BONUS: Exagonal architecture
+- [Command](#command)
 
 ---
 
