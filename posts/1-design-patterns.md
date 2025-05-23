@@ -44,7 +44,7 @@ I also found [this blog post](https://8thlight.com/insights/a-color-coded-guide-
 - [Template Method](#template-method)
 - [Visitor](#visitor)
 
-## BONUS: Exagonal architecture
+## BONUS: Hexagonal architecture
 
 ---
 
