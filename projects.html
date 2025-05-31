@@ -3,11 +3,11 @@ title: "Projects"
 layout: layout.html
 ---
 
-<ul class="projects-list">
+<ul class="list">
     {% for project in collections.projects | reverse %}
-    <li class="project-item">
-        <div class="project-content">
-            <a href="{{ project.data.link }}" class="project-title">{{ project.data.title }}</a>
+    <li class="list-item">
+        <div class="list-content">
+            <a href="{{ project.data.link }}" class="list-title">{{ project.data.title }}</a>
             <p>{{ project.data.description }}</p>
             <p style="font-size: small;"> <strong>Tech:</strong> [{{ project.data.technologies }}]</p>
         </div>

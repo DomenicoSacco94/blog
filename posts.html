@@ -3,11 +3,11 @@ title: "Blog"
 layout: layout.html
 ---
 
-<ul class="blog-posts">
+<ul class="list">
     {% for post in collections.posts | reverse %}
-    <li class="blog-post">
-        <div class="post-content">
-            <a href="blog{{ post.url }}" class="post-title">[{{ post.data.date }}] {{ post.data.title }}</a>
+    <li class="list-item">
+        <div class="list-content">
+            <a href="blog{{ post.url }}" class="list-title">[{{ post.data.date }}] {{ post.data.title }}</a>
         </div>
     </li>
     {% endfor %}
