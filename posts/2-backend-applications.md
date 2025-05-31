@@ -2,7 +2,7 @@
 title: "The rose and the thorns, how I use to create my backend applications"
 date: "2025-05-24"
 layout: layout.html
-tags: [posts]
+--tags: [posts]
 ---
 
 [Work In Progress]
@@ -45,7 +45,7 @@ Something that helps is to think about the operational problems that, as a devel
 - How do I manage the dependencies? Is there the need for some particular toolchain?
 - How does the backend application integrate with the other systems that are already existing? Does it communicate with something else? Does it do synchronously or asynchronously?
 - How frequently will I need to change the DB structure on production?
-- How do I setup an integration test to be sure that the whole application runs properly?
+- How do I set up an integration test to be sure that the whole application runs properly?
 
 
 
