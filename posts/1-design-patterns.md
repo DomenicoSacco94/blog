@@ -9,44 +9,78 @@ In the last months I felt I needed a refresher on the Design Patterns.
 So I created [this GitHub Repo](https://github.com/DomenicoSacco94/design-patterns-with-java), which contains a refresher on the most popular design patterns, implemented with a simple set of Java classes
 
 I have been reading [this book](https://www.amazon.de/-/en/Java-Design-Pattern-Essentials-Second/dp/0956575846) and used it as inspiration to come up with my own examples.
-My suggestion is to do the same: creating examples in a different domain than those provided by the book, to be sure to catch the gist of each pattern.
+
+My suggestion is to do the same: create examples in a different domain than those provided by the book, to be sure to catch the gist of each pattern.
 
 I also found [this blog post](https://8thlight.com/insights/a-color-coded-guide-to-ports-and-adapters) particularly useful to better describe and understand the clean hexagonal architecture.
 
----
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+  }
+  td {
+    border: 1px solid #aaa;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  td:first-child {
+    font-weight: bold;
+    width: 25%;
+  }
+</style>
 
-## Creational Patterns
-- [Abstract Factory](#abstract-factory)
-- [Singleton](#singleton)
-- [Factory](#factory)
-- [Builder](#builder)
-- [Prototype](#prototype)
+<table>
+  <tbody>
+    <tr>
+      <td>Creational Patterns</td>
+      <td>
+        <a href="#abstract-factory">Abstract Factory</a>, 
+        <a href="#singleton">Singleton</a>, 
+        <a href="#factory">Factory</a>, 
+        <a href="#builder">Builder</a>, 
+        <a href="#prototype">Prototype</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Structural Patterns</td>
+      <td>
+        <a href="#adapter">Adapter</a>, 
+        <a href="#facade">Facade</a>, 
+        <a href="#proxy">Proxy</a>, 
+        <a href="#composite">Composite</a>, 
+        <a href="#bridge">Bridge</a>, 
+        <a href="#flyweight">Flyweight</a>, 
+        <a href="#decorator">Decorator</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Behavioral Patterns</td>
+      <td>
+        <a href="#command">Command</a>, 
+        <a href="#chain-of-responsibility">Chain of Responsibility</a>, 
+        <a href="#interpreter">Interpreter</a>, 
+        <a href="#iteration">Iteration</a>, 
+        <a href="#mediator">Mediator</a>, 
+        <a href="#memento">Memento</a>, 
+        <a href="#state">State</a>, 
+        <a href="#observer">Observer</a>, 
+        <a href="#strategy">Strategy</a>, 
+        <a href="#template-method">Template Method</a>, 
+        <a href="#visitor">Visitor</a>
+      </td>
+    </tr>
+    <tr>
+      <td>General Pattern</td>
+      <td>
+        <a href="#hexagonal-architecture">Hexagonal Architecture</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-## Structural Patterns
-- [Adapter](#adapter)
-- [Facade](#facade)
-- [Proxy](#proxy)
-- [Composite](#composite)
-- [Bridge](#bridge)
-- [Flyweight](#flyweight)
-- [Decorator](#decorator)
-
-## Behavioral Patterns
-- [Command](#command)
-- [Chain of Responsibility](#chain-of-responsibility)
-- [Interpreter](#interpreter)
-- [Iteration](#iteration)
-- [Mediator](#mediator)
-- [Memento](#memento)
-- [State](#state)
-- [Observer](#observer)
-- [Strategy](#strategy)
-- [Template Method](#template-method)
-- [Visitor](#visitor)
-
-## BONUS: Hexagonal architecture
-
----
 
 # Creational Patterns
 The Creational Patterns are used to control how an object is instantiated.
