@@ -121,6 +121,7 @@ body {
              "nav"
              "main";
          margin: auto;
+         padding: 5px;
      }
 
      nav {
@@ -135,7 +136,7 @@ body {
      }
 
      header, main {
-         padding-left: 10px;
+         padding: 5px;
      }
 
      .list-item {
