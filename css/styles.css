@@ -108,6 +108,40 @@ main {
     color: #007BFF;
 }
 
+.projects-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.project-title:hover {
+    color: #007BFF;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

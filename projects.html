@@ -3,12 +3,14 @@ title: "Projects"
 layout: layout.html
 ---
 
-<ul>
+<ul class="projects-list">
     {% for project in collections.projects | reverse %}
-    <li>
-        <a href="{{ project.data.link }}" style="font-size: larger;">{{ project.data.title }}</a>
-        <p>{{ project.data.description }}</p>
-        <p style="font-size: small;"> <strong> Tech: </strong> [{{ project.data.technologies }}]</p>
+    <li class="project-item">
+        <div class="project-content">
+            <a href="{{ project.data.link }}" class="project-title">{{ project.data.title }}</a>
+            <p>{{ project.data.description }}</p>
+            <p style="font-size: small;"> <strong>Tech:</strong> [{{ project.data.technologies }}]</p>
+        </div>
     </li>
     {% endfor %}
 </ul>
