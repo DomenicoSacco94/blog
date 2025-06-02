@@ -9,6 +9,9 @@ layout: layout.html
         <div class="list-content">
             <a href="{{ project.data.link }}" class="list-title">{{ project.data.title }}</a>
             <p>{{ project.data.description }}</p>
+            {% if project.data.directLink %}
+            <a href="{{ project.data.directLink }}">Try it here</a>
+            {% endif %}
             <p style="font-size: small;"> <strong>Tech:</strong> [{{ project.data.technologies }}]</p>
         </div>
     </li>

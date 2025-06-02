@@ -6,4 +6,5 @@ date: 2024-03-10
 layout: layout.html
 tags: [projects]
 link: "https://github.com/DomenicoSacco94/linguistic-repo"
+directLink: "https://domenicosacco94.github.io/linguistic-repo/"
 ---
