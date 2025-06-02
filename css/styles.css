@@ -159,4 +159,8 @@ body {
          height: auto;
          display: block;
      }
+
+     .pageTitle {
+         display: none;
+     }
  }
