@@ -1,6 +1,6 @@
 ---
 title: "Linguistic Repo (Backend)"
-description: "Backend microservice component for the Linguistic Repo app. It was Deployed on Heroku and the DB on MongoDB Atlas, the admin users could upload predefined texts in a 'library' displayed in the frontend"
+description: "A backend microservice component for the Linguistic Repo app. It was deployed on Heroku, with the database hosted on MongoDB Atlas. Admin users could upload predefined texts to a 'library' displayed in the frontend."
 technologies: "Java/Spring, MongoDB, Heroku, Oauth"
 date: 2024-03-10
 layout: layout.html

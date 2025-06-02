@@ -1,6 +1,6 @@
 ---
 title: "Haiku Generator"
-description: "In this pet project I want to offer a tool to the user to create their own Haiku poems. The tool will help the user to use a correct number of syllabs for every verse, respecting the metric typical for Haikus written in English. The text is also draggable around."
+description: "This pet project offers users a tool to create their own Haiku poems. The tool helps users ensure the correct number of syllables for each verse, adhering to the metric typical of Haikus written in English. The text is also draggable around."
 technologies: "React/Typescript"
 date: 2024-03-10
 layout: layout.html
