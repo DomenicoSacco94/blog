@@ -1,6 +1,6 @@
 # What is this repo about?
 
-I would like to experiment with 11ty and quickly create my own personal web page from scratch.
+I wanted to experiment with 11ty and quickly create my own personal web page from scratch, so I created [this](https://domenicosacco94.github.io/blog/) blog
 
 ## Why not using React, Vue or other libraries/frameworks?
 
